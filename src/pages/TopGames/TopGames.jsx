@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "../../Components/Header/Header";
+import Search from "../../Components/Search/Search";
 import Title from "../../Components/Title/Title";
 import "./styles.css";
+
 
 function TopGames() {
   const [games, setGames] = useState([]);
@@ -20,16 +22,16 @@ function TopGames() {
     <>
       <section className="hero-home-section">
         <Header />
+        <Search/>
         <div className="top-games-container">
           <Title title="Top Games" className="section-title" />
           <div className="games">
-            <ul>
               {games.map((game) => (
-                <li key={game.id}>
+                <div key={game.id} className='grid-cards'>
                   <Link
                     to={{
                       pathname: `/game/${game.name}`,
-                      gameProp: { game: game },
+                      gameProps: { game: game },
                     }}
                   >
                     <div className="card-game">
@@ -37,9 +39,8 @@ function TopGames() {
                       <label>{game.name}</label>
                     </div>
                   </Link>
-                </li>
+                </div>
               ))}
-            </ul>
           </div>
         </div>
       </section>

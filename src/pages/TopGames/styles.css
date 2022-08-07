@@ -6,10 +6,10 @@ body {
     max-width: 1200px;
     margin: auto;
 }
-.games>ul>li{
-   display: inline-block;
-   margin: 20px 8px 20px 8px;
-   text-align: center;
+.games{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
 }
 .card-game{
     display: flex;
