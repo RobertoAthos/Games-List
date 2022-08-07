@@ -1,0 +1,31 @@
+.header{
+    width: 100%;
+}
+.logo>h1{
+    color: white;
+    font-size: 2rem;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+.input-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-search>input{
+    outline: none;
+    padding: 10px;
+    height: 44px;
+    width: 300px;
+    font-size: 1.2rem;
+}
+.icon{
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: #0d1838;
+}
