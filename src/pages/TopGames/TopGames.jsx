@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link} from "react-router-dom";
 import Header from "../../Components/Header/Header";
-import Search from "../../Components/Search/Search";
 import Title from "../../Components/Title/Title";
 import "./styles.css";
 import {AiFillStar} from 'react-icons/ai'
@@ -26,7 +25,6 @@ function TopGames() {
     <>
       <section className="hero-home-section">
         <Header />
-        <Search/>
         <div className="top-games-container">
           <Title title="Top Games" className="section-title" />
           <div className="games">
@@ -40,7 +38,7 @@ function TopGames() {
                       <h2>{game.name}</h2>
                       <span>Released : {game.released}</span>
                       <p className="rating"><AiFillStar/>{game.rating}</p>
-                      <p>About: {game.description}</p>
+                      <p>Updated: {game.updated}</p>
                       </div>
                     </div>
                 </div>

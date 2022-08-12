@@ -1,13 +1,29 @@
 .header{
     width: 100%;
+    margin-top: 3rem;
 }
 .logo>h1{
     color: white;
     font-size: 2rem;
+}
+.logo{
+    text-align: center;
+}
+.logo>.nav>a{
+    color: white;
+    margin: 15px;
+}
+.nav{
+    margin-top: 2rem;
 }
 .nav-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 70px;
+}
+.active{
+   border: 1px solid white;
+    padding:5px;
+    border-radius: 15px
 }

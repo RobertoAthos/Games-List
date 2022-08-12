@@ -1,5 +1,5 @@
 import {BrowserRouter,Routes,Route } from 'react-router-dom';
-import Results from './pages/ResultsGames/Results'
+import MusPlay from './pages/MustPlayGames/MusPlay';
 import TopGames from './pages/TopGames/TopGames'
 
 
@@ -8,7 +8,7 @@ function App() {
    <BrowserRouter>
          <Routes>
          <Route path='/' element={<TopGames/>}/>
-            <Route path='/results' element={<Results/>}/>
+         <Route path='/mustplay' element={<MusPlay/>}/>
          </Routes>
    </BrowserRouter>
   )
